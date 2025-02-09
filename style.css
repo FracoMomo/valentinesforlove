@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #acd5f2;
+    background-image: linear-gradient(to bottom right, #acd5f2, #f2e5aa, #e85555);
     font-family: 'Mochiy Pop P One', sans-serif;
   }
 
@@ -148,10 +148,11 @@ body {
     background-color: #d04e4e;
     height: 60px;
     width:60px;
-    top:140px;
+    top:150px;
     left:120px;
     transform: rotate(-45deg);
     animation: .8s beat infinite;
+    z-index: 1;
   }
     
   .heart:before, .heart:after {
@@ -181,7 +182,7 @@ body {
     background-color: #333;
     z-index:1;
     border-radius: 0 0 100px 100px;
-    top:170px;
+    top:175px;
     left:135px;
     overflow: hidden;
   }
@@ -205,11 +206,21 @@ body {
     width:10px;
     height:10px;
     z-index:1;
-    top:155px;
+    top:160px;
     left: 157px;
     box-shadow: -40px 0 #333;
     transform-origin: 50%;
     animation: close 2s infinite;
+  }
+
+  .collage {
+    position: absolute;
+    background-color: #d04e4e;
+    height:180px;
+    width:280px;
+    top:190px;
+    left:6px;
+    border: 5px solid #c278b6;
   }
   
   .ily {
